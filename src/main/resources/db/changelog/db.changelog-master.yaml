@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001
+      author: medve
+      changes:
+        - createTable:
+            tableName: test_table
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
